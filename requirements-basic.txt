@@ -1,0 +1,27 @@
+# Basic CVZone dependencies (Python 3.13+ compatible)
+# Use this if you're on Python 3.13+ and don't need MediaPipe/TensorFlow modules
+
+# Core dependencies (always needed)
+opencv-python>=4.5.0
+numpy>=1.19.0
+
+# Serial communication with Arduino
+pyserial>=3.5
+
+# This will enable:
+# - All utility functions (stackImages, cornerRect, putTextRect, etc.)
+# - FPS counter
+# - Plot module
+# - PID module
+# - Color detection
+# - Serial communication
+
+# NOT available without MediaPipe (Python 3.8-3.12 required):
+# - FaceMeshModule
+# - HandTrackingModule
+# - PoseModule
+# - FaceDetectionModule
+# - SelfiSegmentationModule
+
+# NOT available without TensorFlow (Python 3.8-3.12 required):
+# - ClassificationModule

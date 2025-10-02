@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name='cvzone',
@@ -11,10 +11,13 @@ setup(
     url='https://github.com/cvzone/cvzone.git',
     keywords=['ComputerVision', 'HandTracking', 'FaceTracking', 'PoseEstimation'],
     install_requires=[
-        'opencv-python',
-        'numpy'
+        'opencv-python>=4.5.0',
+        'numpy>=1.19.0,<2.0.0',
+        'mediapipe>=0.10.0',
+        'pyserial>=3.5',
+        'tensorflow>=2.13.0',
     ],
-    python_requires='>=3.6',  # Requires any version >= 3.6
+    python_requires='>=3.8,<3.13',  # MediaPipe and TensorFlow support Python 3.8-3.12
 
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -22,6 +25,11 @@ setup(
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3',  # Specify which pyhton versions that you want to support
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
     ],
 )

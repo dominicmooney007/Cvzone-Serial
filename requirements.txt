@@ -1,0 +1,17 @@
+# Core dependencies
+opencv-python>=4.5.0
+numpy>=1.19.0,<2.0.0
+
+# MediaPipe modules (FaceMesh, HandTracking, Pose, FaceDetection, SelfiSegmentation)
+# Note: MediaPipe currently supports Python 3.8-3.12 only
+# If you're on Python 3.13+, you'll need to use Python 3.12 or lower
+# Install with: pip install mediapipe
+# or specify version: pip install mediapipe==0.10.9
+mediapipe>=0.10.0; python_version >= '3.8' and python_version < '3.13'
+
+# Serial communication with Arduino
+pyserial>=3.5
+
+# Classification module (Keras/TensorFlow)
+# TensorFlow has similar Python version constraints
+tensorflow>=2.13.0; python_version >= '3.8' and python_version < '3.13'
