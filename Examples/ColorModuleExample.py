@@ -6,7 +6,7 @@ myColorFinder = cvzone.ColorFinder(trackBar=True)
 
 # Initialize the video capture using OpenCV.
 # Using the third camera (index 2). Adjust index if you have multiple cameras.
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(0)
 
 # Set the dimensions of the camera feed to 640x480.
 cap.set(3, 640)

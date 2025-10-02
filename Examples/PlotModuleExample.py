@@ -4,7 +4,7 @@ import cv2
 import cvzone
 import math
 
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(0)
 detector = FaceDetector(minDetectionCon=0.85, modelSelection=0)
 
 xPlot = LivePlot(w=1200, yLimit=[0, 500], interval=0.01)

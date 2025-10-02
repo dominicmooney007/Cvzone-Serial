@@ -4,7 +4,7 @@ import cv2
 
 # Initialize the webcam. '2' indicates the third camera connected to the computer.
 # '0' usually refers to the built-in camera.
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(0)
 
 # Set the frame width to 640 pixels
 cap.set(3, 640)

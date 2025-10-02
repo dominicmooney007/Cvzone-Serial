@@ -3,7 +3,7 @@ import cv2
 
 # Initialize the webcam
 # '2' indicates the third camera connected to the computer, '0' would usually refer to the built-in webcam
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(0)
 
 # Initialize FaceMeshDetector object
 # staticMode: If True, the detection happens only once, else every frame

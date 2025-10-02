@@ -2,7 +2,7 @@ import cv2
 import cvzone
 
 # Initialize camera capture
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(0)
 
 # Start an infinite loop to continually capture frames
 while True:

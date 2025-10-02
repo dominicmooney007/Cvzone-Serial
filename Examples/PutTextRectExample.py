@@ -2,7 +2,7 @@ import cv2
 import cvzone  # Importing the cvzone library
 
 # Initialize the webcam
-cap = cv2.VideoCapture(2)  # Capture video from the third webcam (0-based index)
+cap = cv2.VideoCapture(0)  # Capture video from the third webcam (0-based index)
 
 # Main loop to continuously capture frames
 while True:

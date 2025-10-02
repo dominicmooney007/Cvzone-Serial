@@ -1,7 +1,7 @@
 from cvzone.ClassificationModule import Classifier
 import cv2
 
-cap = cv2.VideoCapture(2)  # Initialize video capture
+cap = cv2.VideoCapture(0)  # Initialize video capture
 path = "C:/Users/USER/Documents/maskModel/"
 maskClassifier = Classifier(f'{path}/keras_model.h5', f'{path}/labels.txt')
 
